@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/text_question_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Question:"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_submit_question_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup_question_ac"
+        android:layout_alignRight="@+id/radioGroup_question_ac"
+        android:layout_below="@+id/radioGroup_question_ac"
+        android:layout_marginTop="36dp"
+        android:text="Submit" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_question_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_question_ac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" >
+
+        <RadioButton
+            android:id="@+id/radio0_question_ac"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RadioButton"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/radio1_question_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/radio2_question_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textStyle="italic" />
+
+    </RadioGroup>
+
+</RelativeLayout>
